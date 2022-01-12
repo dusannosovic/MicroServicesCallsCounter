@@ -1,0 +1,19 @@
+﻿@model IEnumerable<Common.TableEntityHtmlBinding>
+
+@{
+    ViewBag.Title = "Index";
+}
+<div><b>Table Format Data Displaying in ForEach</b><br /></div>
+<table class="table table-bordered table-responsive table-hover">
+    <tr>
+        <th>Id </th>
+        <th>Number of calls</th>
+    </tr>
+    @foreach (var d in Model)
+    {
+    <tr>
+        <td>@d.Id</td>
+        <td>@d.Count</td>
+    </tr>
+    }
+</table>  

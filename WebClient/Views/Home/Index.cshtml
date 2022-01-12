@@ -1,0 +1,13 @@
+﻿@if (ViewData["Title"] != null)
+{
+    <h1 style="color:blue">@ViewData["Title"]</h1>
+}
+
+
+
+<form method="post" action="@Url.Action("PostData", "HomeController")">
+    <label>Container1</label><input id="in1" name="container1" type="number" />
+    <label>Container2</label><input id="in2" name="container2" type="number" />
+    <label>Container3</label><input id="in3" name="container3" type="number" />
+    <input type="submit" />
+</form>
